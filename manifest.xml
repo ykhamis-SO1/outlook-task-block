@@ -10,9 +10,9 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Task-Block Scheduler"/>
   <Description DefaultValue="Create a single calendar appointment with a sequenced, time-boxed task list."/>
-  <IconUrl DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/taskpane/taskpane.html"/>
+  <IconUrl DefaultValue="https://ykhamis-SO1.github.io/outlook-task-block/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://ykhamis-SO1.github.io/outlook-task-block/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://ykhamis-SO1.github.io/outlook-task-block/taskpane/taskpane.html"/>
 
   <Hosts><Host Name="Mailbox"/></Hosts>
 
@@ -25,7 +25,7 @@
   <FormSettings>
     <Form xsi:type="ItemEdit">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/taskpane/taskpane.html"/>
+        <SourceLocation DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/taskpane/taskpane.html"/>
         <RequestedHeight>480</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -66,12 +66,12 @@
 
     <mailappor:Resources>
       <mailappor:bt:Images>
-        <mailappor:bt:Image id="icon16" DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-16.png"/>
-        <mailappor:bt:Image id="icon32" DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-32.png"/>
-        <mailappor:bt:Image id="icon80" DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-80.png"/>
+        <mailappor:bt:Image id="icon16" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-16.png"/>
+        <mailappor:bt:Image id="icon32" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-32.png"/>
+        <mailappor:bt:Image id="icon80" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-80.png"/>
       </mailappor:bt:Images>
       <mailappor:bt:Urls>
-        <mailappor:bt:Url id="taskpaneUrl" DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/taskpane/taskpane.html"/>
+        <mailappor:bt:Url id="taskpaneUrl" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/taskpane/taskpane.html"/>
       </mailappor:bt:Urls>
       <mailappor:bt:ShortStrings>
         <mailappor:bt:String id="openPaneButtonLabel" DefaultValue="Plan Task Block"/>
