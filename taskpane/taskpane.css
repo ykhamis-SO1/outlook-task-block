@@ -1,0 +1,25 @@
+// =============================================
+// FILE: taskpane/taskpane.css
+// =============================================
+// Save as ./taskpane/taskpane.css
+
+`body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; }
+.app { padding: 14px; }
+.muted { color: #6b7280; }
+.card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px; margin: 10px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+.row { display: flex; gap: 8px; align-items: center; }
+.row.between { justify-content: space-between; }
+button { padding: 8px 12px; border-radius: 10px; border: 1px solid #d1d5db; background: #f9fafb; cursor: pointer; }
+button.secondary { background: white; }
+button:hover { background: #f3f4f6; }
+input, select { width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 10px; }
+.task { display: grid; grid-template-columns: 1fr 90px 32px; gap: 8px; align-items: center; margin: 6px 0; }
+.task input[type="text"] { width: 100%; }
+.task input[type="number"] { width: 100%; }
+.task .del { text-align: center; font-weight: bold; cursor: pointer; }
+.preview { border-top: 1px dashed #e5e7eb; margin-top: 8px; padding-top: 8px; max-height: 200px; overflow: auto; font-size: 0.95rem; }
+.table { border-collapse: collapse; width: 100%; }
+.table th, .table td { border: 1px solid #e5e7eb; padding: 6px 8px; text-align: left; }
+.table th { background: #f3f4f6; }
+.over { color: #b91c1c; }
+.under { color: #065f46; }`
