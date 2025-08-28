@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
+           xsi:type="MailApp">
+  <Id>f8f9b44c-1a4a-4a9c-9e1b-12dd7c2af001</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>SaniOnes LLC</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Task-Block Scheduler"/>
+  <Description DefaultValue="Create a single calendar appointment with a sequenced, time-boxed task list."/>
+  <IconUrl DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/taskpane/taskpane.html"/>
+
+  <Hosts><Host Name="Mailbox"/></Hosts>
+
+  <Requirements>
+    <Sets DefaultMinVersion="1.5">
+      <Set Name="Mailbox"/>
+    </Sets>
+  </Requirements>
+
+  <FormSettings>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/taskpane/taskpane.html"/>
+        <RequestedHeight>480</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Edit"/>
+  </Rule>
+
+  <Permissions>ReadWriteItem</Permissions>
+
+  <VersionOverrides xsi:type="mailappor:VersionOverrides" Version="1.0">
+    <mailappor:Hosts>
+      <mailappor:Host xsi:type="mailappor:Mailbox">
+        <mailappor:ExtensionPoint xsi:type="mailappor:AppointmentOrganizerCommandSurface">
+          <mailappor:OfficeTab id="TabDefault">
+            <mailappor:Group id="taskBlockGroup" label="Task-Block">
+              <mailappor:Control xsi:type="mailappor:Button" id="btnOpenPane">
+                <mailappor:Label resid="openPaneButtonLabel"/>
+                <mailappor:Supertip>
+                  <mailappor:Title resid="openPaneButtonLabel"/>
+                  <mailappor:Description resid="openPaneButtonTooltip"/>
+                </mailappor:Supertip>
+                <mailappor:Icon>
+                  <mailappor:bt:Image size="16" resid="icon16"/>
+                  <mailappor:bt:Image size="32" resid="icon32"/>
+                  <mailappor:bt:Image size="80" resid="icon80"/>
+                </mailappor:Icon>
+                <mailappor:Action xsi:type="mailappor:ShowTaskpane">
+                  <mailappor:SourceLocation resid="taskpaneUrl"/>
+                </mailappor:Action>
+              </mailappor:Control>
+            </mailappor:Group>
+          </mailappor:OfficeTab>
+        </mailappor:ExtensionPoint>
+      </mailappor:Host>
+    </mailappor:Hosts>
+
+    <mailappor:Resources>
+      <mailappor:bt:Images>
+        <mailappor:bt:Image id="icon16" DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-16.png"/>
+        <mailappor:bt:Image id="icon32" DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-32.png"/>
+        <mailappor:bt:Image id="icon80" DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/assets/icon-80.png"/>
+      </mailappor:bt:Images>
+      <mailappor:bt:Urls>
+        <mailappor:bt:Url id="taskpaneUrl" DefaultValue="https://YOUR_USER.github.io/YOUR_REPO/taskpane/taskpane.html"/>
+      </mailappor:bt:Urls>
+      <mailappor:bt:ShortStrings>
+        <mailappor:bt:String id="openPaneButtonLabel" DefaultValue="Plan Task Block"/>
+      </mailappor:bt:ShortStrings>
+      <mailappor:bt:LongStrings>
+        <mailappor:bt:String id="openPaneButtonTooltip" DefaultValue="Build a time-boxed task list and insert it into this appointment."/>
+      </mailappor:bt:LongStrings>
+    </mailappor:Resources>
+  </VersionOverrides>
+</OfficeApp>
