@@ -5,16 +5,18 @@
            xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
            xsi:type="MailApp">
   <Id>f8f9b44c-1a4a-4a9c-9e1b-12dd7c2af001</Id>
-  <Version>1.0.0.0</Version>
+  <Version>1.0.0.1</Version>
   <ProviderName>SaniOnes LLC</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Task-Block Scheduler"/>
   <Description DefaultValue="Create a single calendar appointment with a sequenced, time-boxed task list."/>
-  <IconUrl DefaultValue="https://ykhamis-SO1.github.io/outlook-task-block/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://ykhamis-SO1.github.io/outlook-task-block/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://ykhamis-SO1.github.io/outlook-task-block/taskpane/taskpane.html"/>
+  <IconUrl DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/taskpane/taskpane.html"/>
 
-  <Hosts><Host Name="Mailbox"/></Hosts>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
 
   <Requirements>
     <Sets DefaultMinVersion="1.5">
@@ -38,6 +40,12 @@
   <Permissions>ReadWriteItem</Permissions>
 
   <VersionOverrides xsi:type="mailappor:VersionOverrides" Version="1.0">
+    <mailappor:Requirements>
+      <mailappor:Sets DefaultMinVersion="1.10">
+        <mailappor:Set Name="Mailbox"/>
+      </mailappor:Sets>
+    </mailappor:Requirements>
+
     <mailappor:Hosts>
       <mailappor:Host xsi:type="mailappor:Mailbox">
         <mailappor:ExtensionPoint xsi:type="mailappor:AppointmentOrganizerCommandSurface">
@@ -70,12 +78,15 @@
         <mailappor:bt:Image id="icon32" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-32.png"/>
         <mailappor:bt:Image id="icon80" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-80.png"/>
       </mailappor:bt:Images>
+
       <mailappor:bt:Urls>
         <mailappor:bt:Url id="taskpaneUrl" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/taskpane/taskpane.html"/>
       </mailappor:bt:Urls>
+
       <mailappor:bt:ShortStrings>
         <mailappor:bt:String id="openPaneButtonLabel" DefaultValue="Plan Task Block"/>
       </mailappor:bt:ShortStrings>
+
       <mailappor:bt:LongStrings>
         <mailappor:bt:String id="openPaneButtonTooltip" DefaultValue="Build a time-boxed task list and insert it into this appointment."/>
       </mailappor:bt:LongStrings>
