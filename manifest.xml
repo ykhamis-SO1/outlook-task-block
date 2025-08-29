@@ -5,7 +5,7 @@
            xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
            xsi:type="MailApp">
   <Id>f8f9b44c-1a4a-4a9c-9e1b-12dd7c2af001</Id>
-  <Version>1.0.0.1</Version>
+  <Version>1.0.0.4</Version>
   <ProviderName>SaniOnes LLC</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Task-Block Scheduler"/>
@@ -58,9 +58,9 @@
                   <mailappor:Description resid="openPaneButtonTooltip"/>
                 </mailappor:Supertip>
                 <mailappor:Icon>
-                  <mailappor:bt:Image size="16" resid="icon16"/>
-                  <mailappor:bt:Image size="32" resid="icon32"/>
-                  <mailappor:bt:Image size="80" resid="icon80"/>
+                  <bt:Image size="16" resid="icon16"/>
+                  <bt:Image size="32" resid="icon32"/>
+                  <bt:Image size="80" resid="icon80"/>
                 </mailappor:Icon>
                 <mailappor:Action xsi:type="mailappor:ShowTaskpane">
                   <mailappor:SourceLocation resid="taskpaneUrl"/>
@@ -73,23 +73,23 @@
     </mailappor:Hosts>
 
     <mailappor:Resources>
-      <mailappor:bt:Images>
-        <mailappor:bt:Image id="icon16" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-16.png"/>
-        <mailappor:bt:Image id="icon32" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-32.png"/>
-        <mailappor:bt:Image id="icon80" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-80.png"/>
-      </mailappor:bt:Images>
+      <bt:Images>
+        <bt:Image id="icon16" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-16.png"/>
+        <bt:Image id="icon32" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-32.png"/>
+        <bt:Image id="icon80" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/assets/icon-80.png"/>
+      </bt:Images>
 
-      <mailappor:bt:Urls>
-        <mailappor:bt:Url id="taskpaneUrl" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/taskpane/taskpane.html"/>
-      </mailappor:bt:Urls>
+      <bt:Urls>
+        <bt:Url id="taskpaneUrl" DefaultValue="https://ykhamis-so1.github.io/outlook-task-block/taskpane/taskpane.html"/>
+      </bt:Urls>
 
-      <mailappor:bt:ShortStrings>
-        <mailappor:bt:String id="openPaneButtonLabel" DefaultValue="Plan Task Block"/>
-      </mailappor:bt:ShortStrings>
+      <bt:ShortStrings>
+        <bt:String id="openPaneButtonLabel" DefaultValue="Plan Task Block"/>
+      </bt:ShortStrings>
 
-      <mailappor:bt:LongStrings>
-        <mailappor:bt:String id="openPaneButtonTooltip" DefaultValue="Build a time-boxed task list and insert it into this appointment."/>
-      </mailappor:bt:LongStrings>
+      <bt:LongStrings>
+        <bt:String id="openPaneButtonTooltip" DefaultValue="Build a time-boxed task list and insert it into this appointment."/>
+      </bt:LongStrings>
     </mailappor:Resources>
   </VersionOverrides>
 </OfficeApp>
